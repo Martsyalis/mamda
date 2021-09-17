@@ -1,4 +1,4 @@
-const { curry, ...ramda } = require("ramda");
+const { curry, head, tail, ...ramda } = require("ramda");
 
 const asyncCompose =
     (...functions) =>
