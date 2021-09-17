@@ -1,4 +1,4 @@
-const ramda = require('ramda');
+const ramda, {curry} = require('ramda');
 
 const asyncCompose =
   (...functions) =>
