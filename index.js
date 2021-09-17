@@ -23,6 +23,9 @@ const mapPromises = async (promises, cb) =>
 
 module.exports = {
     ...ramda,
+    curry,
+    head,
+    tail,
     asyncCompose,
     trace,
     mapPromises,
