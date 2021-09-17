@@ -1,4 +1,4 @@
-const { compose, head, tail, curry, insert } = require('ramda');
+const ramda = require('ramda');
 
 const asyncCompose =
   (...functions) =>
@@ -19,12 +19,8 @@ const mapPromises = async (promises, cb) =>
     : [await cb(head(promises)), ...(await mapPromises(tail(promises), cb))];
 
 module.exports = {
-  compose,
-  head,
-  tail,
-  curry,
+ ...ramda,
   asyncCompose,
   trace,
   mapPromises,
-  insert
 };

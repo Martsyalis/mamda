@@ -5,9 +5,4 @@ homebrew:
 - trace 
 - mapPromises
 
-from ramda:
-- compose
-- head
-- tail
-- curry
-- insert
+all of ramda
